@@ -1,0 +1,42 @@
+Brainfuck Project: Printing "Manipulating pointers is awesome!!" and making multiple copies of a string
+Initializes the 5 cells for processing
+>+++++++[<+++++++++++>-]<. Print M CELL 1
+>++++[<+++++>-]<. Print a CELL 1
+>>+++++++++++++++[<+++++++>-] i CELL 2
+>++++++++++[<+++++++++++>-]<. Print n CELL 3
+>>+++++++++[<+++++++++++++>-] u CELL 4
+>++++[<++++++++>-]< SPACE CELL 5
+<<<. Print i CELL 2
+>++. Print p CELL 3
+>. Print u CELL 4
+<----. Print l CELL 3
+<<. Print a CELL 1
+>>>-. Print t CELL 4
+<<. Print i CELL 2
+>++. Print n CELL 3
+<--. Print g CELL 2
+>>>. Print SPACE CELL 5
+<<++. Print p CELL 3
+-. Print o CELL 3
+<++. Print i CELL 2
+>-. Print n CELL 3
+>. Print t CELL 4
+<<<++++. Print e CELL 1
+>>++++. Print r CELL 3
++. Print s CELL 3
+>>. Print SPACE CELL 5
+<<<. Print i CELL 2
+>. Print s CELL 3
+>>. Print SPACE CELL 5
+<<<<----. Print a CELL 1
+>>>+++. Print w CELL 4
+<<<++++. Print e CELL 1
+>>>----. Print s CELL 4
+<----. Print o CELL 3
+--. Print m CELL 3
+<<. Print e CELL 1
+>>>>+.. Print !! CELL 5
+>++++++++++.
+,.>++++++[<-------->-] #Parses the first character as integer = X minus 3*4*4
+>++++++++++[>,]<[<] #Stores the string immediately after the integer
+<[>>[.>]<[<]<-]

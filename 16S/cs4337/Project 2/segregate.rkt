@@ -1,0 +1,23 @@
+#lang racket
+(provide segregate)
+(define (segregate inputlist)
+    (define (evens args)
+        (if (not(empty? args))
+            (if (= (modulo (car args) 2) 0)
+                (cons (car args) (evens (cdr args)))
+                (evens (cdr args))
+            )
+            empty
+        )
+    )
+    (define (odds args)
+        (if (not(empty? args))
+            (if (= (modulo (car args) 2) 1)
+                (cons (car args) (odds (cdr args)))
+                (odds (cdr args))
+            )
+            empty
+        )
+    )
+    (list (evens inputlist) (odds inputlist))
+)
